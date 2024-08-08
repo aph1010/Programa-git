@@ -1,0 +1,412 @@
+/* Estilo global para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* Contenedor del encabezado */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Estilo del logo */
+header .logo {
+    width: 400px; /* Ajusta el tamaño del logo según el prototipo */
+    height: auto;
+}
+
+/* Estilo de la barra de navegación */
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around; /* Distribuye los botones de manera uniforme */
+}
+
+/* Estilo de los botones de navegación */
+nav a.nav-button {
+    background-color: #00ced1;
+    color: #00008B; /* Azul oscuro */;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 50px; /* Espacio entre los botones */
+    flex: 1;
+    text-align: center;
+}
+
+/* Efecto hover para los botones de navegación */
+nav a.nav-button:hover {
+    background-color: #00ced1;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Contenido principal */
+.main-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner-image {
+    width: 85%; /* Ajusta el tamaño del banner según el prototipo */
+    height: auto;
+    border-radius: 20px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+/* Estilo del texto dentro del banner */
+.banner-text h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.banner-text p {
+    margin: 10px 0;
+}
+
+/* Botón principal */
+.primary-button {
+    background-color: #00ced1;
+    color: #00008B; /* Azul oscuro */;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto; /* Centrar el botón */
+}
+
+/* Efecto hover para el botón principal */
+.primary-button:hover {
+    background-color: #00ced1;
+}
+
+/* Enlaces con imágenes adicionales */
+.extra-images {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.extra-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Imágenes adicionales */
+.extra-image {
+    width: 300px; /* Aumenta el tamaño de las imágenes adicionales */
+    height: auto;
+    transition: transform 0.3s ease; /* Transición para el efecto hover */
+    margin: 15px; /* Espacio entre las imágenes */
+}
+
+/* Efecto hover para las imágenes adicionales */
+.extra-image:hover {
+    transform: scale(1.1);
+}
+
+/* Sección de inicio de sesión */
+.login {
+    width: 45%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center; /* Centrar el contenido */
+}
+
+.login h3 {
+    margin: 0;
+    font-size: 28px;/* Tamaño del texto "Inicio de Sesión" */
+    color: #00008b;
+    margin-bottom: 15px;/* Incrementa la separación */
+}
+
+/* Campos de texto para el inicio de sesión */
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Botón para iniciar sesión */
+.primary-button {
+    margin-top: 20px; /* Incrementa la separación */
+}
+
+/* Enlaces dentro de la sección de inicio de sesión */
+.login .login-link {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    color: #00008b;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left; /* Alinear a la izquierda */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo adicional para incrementar la separación antes de "¿Olvidaste contraseña?" */
+.login .forgot-password {
+    margin-top: 30px; /* Incrementa la separación específica */
+}
+
+/* Efecto hover para los enlaces */
+.login .login-link:hover {
+    background-color: #ffffff;
+}
+
+.social-title {
+    color: #00008B; /* Modificación: Cambio de color al azul oscuro */
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-social img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Estilo para la sección de "Nuestra empresa" */
+.about-us h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    text-align: justify;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la imagen de "Sitio en construcción" */
+.construction-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/*Servicios*/
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Estilo para el título principal de la página de servicios */
+.container h1 {
+    font-size: 32px; /* Aumenta el tamaño de la fuente para mayor visibilidad */
+    color: #00008B; /* Azul oscuro */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 20px; /* Espacio debajo del título para separación */
+}
+
+.services-list {
+    margin-top: 20px;
+}
+
+/* Estilo para los títulos de cada servicio */
+.service-item h2 {
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 10px; /* Espacio en la parte superior para cada título de servicio */
+    margin-bottom: 5px; /* Espacio debajo de cada título antes de la descripción */
+}
+
+.service-item {
+    margin-bottom: 20px; /* Espacio entre servicios */
+    background-color: #f0f0f0; /* Un ligero fondo para destacar cada servicio */
+    padding: 15px; /* Relleno para cada caja de servicio */
+    border-radius: 5px; /* Bordes redondeados para una apariencia suave */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #00ced1;
+    color: white;
+}
+
+.construction-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para el contenedor del título */
+.title-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    background-color: #f8f8f8;  /* Fondo para destacar el título */
+}
+
+/* Estilo para el título con clase específica */
+.property-title {
+    color: #00008B; /* Azul oscuro */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Texto centrado */
+    margin-top: 20px; /* Espacio superior para separación visual */
+    margin-bottom: 20px; /* Espacio inferior para separación visual */
+}
+/* Contenedor de contenido ajustado para el formulario y las imágenes */
+.form-column {
+    display: flex;
+    flex-direction: column; /* Organiza los hijos verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    padding: 20px;
+    border-right: 2px solid #ddd; /* Separador visual */
+    max-width: 25%; /* Limita el ancho del formulario */
+}
+
+/* Estilo para cada grupo de etiqueta y campo en el formulario */
+.form-column form {
+    width: 100%; /* Usa todo el ancho de la columna del formulario */
+}
+
+.form-column label {
+    margin-top: 10px; /* Espacio superior para separar las etiquetas de los campos anteriores */
+    font-weight: bold; /* Hace que las etiquetas sean más notorias */
+}
+
+.form-column input, 
+.form-column select {
+    width: 100%; /* Asegura que los campos usen todo el ancho disponible */
+    padding: 8px; /* Añade un poco de relleno para facilidad de uso */
+    margin-top: 5px; /* Espacio después de la etiqueta */
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+}
+
+/* Botón al final del formulario */
+.form-column button {
+    margin-top: 20px; /* Espacio antes del botón */
+    padding: 10px 15px;
+    background-color: #00ced1; /* Color de fondo del botón */
+    color: white; /* Texto en blanco para mayor contraste */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Indica que es un elemento clickeable */
+    width: auto; /* Permite que el tamaño del botón sea el contenido */
+}
+
+.form-column button:hover {
+    background-color: #009ba9; /* Oscurece el botón al pasar el mouse */
+}
+
+/* Estilo para el título específico "Nuestra empresa" */
+.h1-nuestra-empresa {
+    color: #00008B; /* Azul oscuro */
+    font-weight: bold; /* Aplicar negrita */
+}
+
+/* Pie de página */
+footer {
+    background-color: #00ced1;
+    color: #00008b;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #00008b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link {
+    display: block; /* Asegura que cada enlace sea tratado como un bloque para mejor control del espaciado */
+    margin-bottom: 8px; /* Reduce el margen inferior para acercar estos enlaces al título de redes sociales */
+}
+
+.social-section {
+    margin-top: 20px; /* Aumenta el espacio entre las opciones de inicio de sesión y el título de redes sociales */
+    text-align: center; /* Centra todo el contenido dentro del contenedor */
+}
+
+.social-title {
+    text-align: center;
+    color: #00008B; /* Color azul oscuro */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 5px; /* Reduce el espacio entre el título y los íconos */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente los íconos de las redes sociales */
+    padding: 5px 0; /* Espaciado vertical para separar de otros elementos */
+}
+
+.social-icon {
+    width: 40px; /* Tamaño de los íconos */
+    height: auto;
+    margin: 0 10px; /* Espaciado entre íconos */
+}

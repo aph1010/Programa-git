@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades - Casascol Inmobiliaria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Casascol Inmobiliaria" class="logo">
+            <nav>
+                <a href="index.html" class="nav-button">Inicio</a>
+                <a href="servicios.html" class="nav-button">Servicios</a>
+                <a href="nosotros.html" class="nav-button">Nosotros</a>
+            </nav>
+        </div>
+    </header>
+
+<!-- Título en una fila independiente -->
+<div class="title-container">
+<h1 class="property-title">Todas nuestras propiedades</h1>
+</div>
+
+<!-- Contenido debajo del título -->
+<div class="container">
+    <div class="form-column">
+        <form>
+            <label for="modalidad">Modalidad:</label>
+            <select id="modalidad" name="modalidad">
+                <option value="venta">Venta</option>
+                <option value="arriendo">Arriendo</option>
+            </select>
+            
+            <label for="tipo">Tipo de Inmueble:</label>
+            <select id="tipo" name="tipo">
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
+            </select>
+            
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad" name="ciudad">
+                <option value="cali">Cali</option>
+                <option value="buenaventura">Buenaventura</option>
+                <option value="palmira">Palmira</option>
+                <option value="tulua">Tuluá</option>
+                <option value="jamundi">Jamundí</option>
+                <option value="buga">Buga</option>
+                <!-- Añade más ciudades según sea necesario -->
+            </select>
+            
+            <label for="zona">Zona:</label>
+            <input type="text" id="zona" name="zona">
+            
+            <label for="barrio">Barrio:</label>
+            <input type="text" id="barrio" name="barrio">
+            
+            <label for="precio">Precio:</label>
+            <select id="precio" name="precio">
+                <option value="0">0 - 500,000</option>
+                <option value="500000">500,000 - 1,000,000</option>
+                <option value="1000000">1,000,000 - 1,500,000</option>
+                <option value="1500000">1,500,000 - 2,000,000</option>
+                <option value="2000000">2,000,000 - 2,500,000</option>
+                <!-- Continúa agregando rangos de precio -->
+                <option value="50000000">Más de 50,000,000</option>
+            </select>
+            
+            <label for="habitaciones">Habitaciones:</label>
+            <input type="number" id="habitaciones" name="habitaciones">
+            
+            <label for="baños">Baños:</label>
+            <input type="number" id="baños" name="baños">
+            
+            <label for="estrato">Estrato:</label>
+            <input type="number" id="estrato" name="estrato">
+            
+            <label for="parqueaderos">Parqueaderos:</label>
+            <input type="number" id="parqueaderos" name="parqueaderos">
+            
+            <button type="submit" class="primary-button">Buscar</button>
+        </form>
+    </div>
+
+    <!-- Tres columnas para imágenes y descripciones de las propiedades -->
+    <div class="property-column"></div>
+    <div class="property-column"></div>
+    <div class="property-column"></div>
+</div>
+ 
+
+<!-- Imágenes adicionales con enlaces -->
+<div class="extra-images">
+    <a href="estudio.html" class="extra-link">
+        <img src="images/estudio.png" alt="Estudio de Arrendamiento" class="extra-image">
+    </a>
+    <a href="pse.html" class="extra-link">
+        <img src="images/pse.png" alt="Pagos en línea con PSE" class="extra-image">
+    </a>
+    <a href="consigna.html" class="extra-link">
+        <img src="images/consigna.png" alt="Consigna tu inmueble" class="extra-image">
+    </a>
+</div>
+
+<div class="footer-container">
+    <footer>
+        <p>&copy; 2023 Casascol. Todos los derechos reservados.</p>
+        <p><a href="#">Política de privacidad</a></p>
+    </footer>
+</div>
+
+    <script src="scr
+</body>
+</html>
